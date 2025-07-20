@@ -6,23 +6,23 @@ while True:
     match priority:
         case 'high':
             if time_bound == 'yes':
-                print(f"'{task}' is a high priority task that requires your immediate attention today!")
+                print(f"Reminder: '{task}' is a high priority task that requires your immediate attention today!")
             else:
-                print(f"'{task}' is important, but you can handle it when you're less busy")
+                print(f"Note: '{task}' is important, but you can handle it when you're less busy")
 
         case 'medium':
             if time_bound == 'yes':
-                print(f"'{task}' is a medium priority task. Try to complete it before the day ends")
+                print(f"Reminder: '{task}' is a medium priority task. Try to complete it before the day ends")
             else:
-                print(f"'{task}' is a moderate task. Plan to do it soon, but it's not urgent")
+                print(f"Note: '{task}' is a medium priority task. Try to complete it before the day ends")
 
         case 'low':
             if time_bound == 'yes':
-                print(f"'{task}' is a low priority task, but don't forget - it needs to be done today.")
+                print(f"Reminder: '{task}' is a low priority task, but don't forget - it needs to be done today.")
             else:
-                print(f"'{task}' can wait. Consider doing it when you have spare time")
-
+                print(f"Note: '{task}' can wait. Consider doing it when you have spare time")
 
     again = input("Do you want to enter another task? (yes/no): ")
     if again != 'yes':
             break
+    
