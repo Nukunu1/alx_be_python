@@ -1,3 +1,5 @@
+# shopping_list_manager.py
+
 def display_menu():
     print("Shopping List Manager")
     print("1. Add Item")
@@ -17,12 +19,12 @@ def main():
             continue
 
         if choice == 1:
-            item = input("Enter item to add: ").strip()
+            item = input("Enter the item to add: ").strip()  # exact text required
             shopping_list.append(item)
             print(f"'{item}' has been added to the shopping list.")
 
         elif choice == 2:
-            item = input("Enter item to remove: ").strip()
+            item = input("Enter the item to remove: ").strip()  # for consistency
             if item in shopping_list:
                 shopping_list.remove(item)
                 print(f"'{item}' has been removed from the shopping list.")
